@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.accelerometer_android_test.cal.accelerometer_android_test.MainActivity">
+
+    <EditText
+        android:id="@+id/xText"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="X"
+        tools:layout_editor_absoluteX="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/yText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yText"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="y"
+        tools:layout_editor_absoluteX="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/zText"
+        app:layout_constraintTop_toBottomOf="@+id/xText" />
+
+    <EditText
+        android:id="@+id/zText"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Z"
+        tools:layout_editor_absoluteX="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yText" />
+
+</android.support.constraint.ConstraintLayout>
